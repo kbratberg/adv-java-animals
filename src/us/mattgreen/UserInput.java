@@ -1,20 +1,26 @@
 package us.mattgreen;
 
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
     public class UserInput {
-        public UserInput() {
+
+        int animal;
+        String name = "";
+        int mousesKilled = 0;
+        Boolean friendly = null;
+        String isFriendly;
+        int age=0;
+        Scanner input = new Scanner(System.in);
+        ArrayList<Talkable> zoo = new ArrayList<>();
+
+        public UserInput(ArrayList<Talkable>zoo) {
+           this.zoo = zoo;
+
         }
 
-        public static void userInput(){
-            Scanner input = new Scanner(System.in);
-            int animal;
-            String name = "";
-            int mousesKilled = 0;
-            Boolean friendly = null;
-            String isFriendly;
-            int age=0;
+        public void setUserInput(){
 
             System.out.println("What type of animal would you like to create?\n" +
                     "1. Cat\n2. Dog\n3. Person\n" +
