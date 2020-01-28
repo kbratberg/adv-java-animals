@@ -1,8 +1,5 @@
 package us.mattgreen;
 
-import us.mattgreen.Cat;
-import us.mattgreen.Dog;
-import us.mattgreen.Teacher;
 
 import java.util.Scanner;
 
