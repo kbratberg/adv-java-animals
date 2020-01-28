@@ -28,18 +28,21 @@ import java.util.Scanner;
             animal = input.nextInt();
             if (animal == 1)
             {
+                input.nextLine();
                 System.out.println("What is your cat's name>");
                 name = input.nextLine();
                 System.out.println("How many mice has your cat killed? ");
                 mousesKilled = input.nextInt();
                 Cat newCat = new Cat(mousesKilled, name);
+                zoo.add(newCat);
             }
             else if (animal == 2)
             {
-                System.out.println("What is your dog's name>");
                 input.nextLine();
+                System.out.println("What is your dog's name>");
                 name = input.nextLine();
                 System.out.println("Is your dog friendly Y/N? ");
+                input.nextLine();
                 isFriendly = input.nextLine();
                 if(isFriendly.equalsIgnoreCase("Y"))
                 {
@@ -49,18 +52,24 @@ import java.util.Scanner;
                     friendly = false;
                 }
                 Dog newDog = new Dog(friendly, name);
+                zoo.add(newDog);
             }
             else if (animal == 3)
             {
-                System.out.println("What is the person's name?");
                 input.nextLine();
+                System.out.println("What is the person's name?");
                 name = input.nextLine();
                 System.out.println("What is the person's age?");
                 age = input.nextInt();
                 Teacher newPerson = new Teacher(age, name);
+                zoo.add(newPerson);
             }
         }
 
+
+        public ArrayList<Talkable> getZoo() {
+            return zoo;
+        }
     }
 
 
