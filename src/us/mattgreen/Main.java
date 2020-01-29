@@ -13,7 +13,8 @@ public class Main {
         // Lines to Replace Begin Here
         UserInput newInput = new UserInput (zoo);
         newInput.setUserInput();
-        newInput.getZoo();
+
+
 
         // End Lines to Replace
 
