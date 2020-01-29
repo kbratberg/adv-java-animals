@@ -13,7 +13,7 @@ import java.util.Scanner;
         String isFriendly;
         int age=0;
         Scanner input = new Scanner(System.in);
-        ArrayList<Talkable> zoo = new ArrayList<>();
+        ArrayList<Talkable> zoo;
 
         public UserInput(ArrayList<Talkable>zoo) {
            this.zoo = zoo;
@@ -42,7 +42,6 @@ import java.util.Scanner;
                 System.out.println("What is your dog's name>");
                 name = input.nextLine();
                 System.out.println("Is your dog friendly Y/N? ");
-                input.nextLine();
                 isFriendly = input.nextLine();
                 if(isFriendly.equalsIgnoreCase("Y"))
                 {

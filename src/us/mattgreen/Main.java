@@ -14,6 +14,7 @@ public class Main {
         UserInput newInput = new UserInput (zoo);
         newInput.setUserInput();
         newInput.getZoo();
+
         // End Lines to Replace
 
         for (Talkable thing : zoo) {
