@@ -1,1 +1,2 @@
-Fuzz | Meow
+Jane | Don't forget to do the assigned reading!
+bob | Bark

@@ -31,7 +31,7 @@ public class InputTypeVerifier {
     }
 
 
-    public int getAge() {
+    public int getAge(String stringAge) {
         int age = Integer.parseInt(stringAge);
         return age;
     }
@@ -46,7 +46,8 @@ public class InputTypeVerifier {
         return mousesKilled;
     }
 
-    public int getKeepGoing() {
+    public int getKeepGoing(String stringKeepGoing) {
+        keepGoing = Integer.parseInt(stringKeepGoing);
         return keepGoing;
     }
 
@@ -57,6 +58,7 @@ public class InputTypeVerifier {
 
     public boolean isValid(String isFriendly)
     {
+        valid = true;
         if (!isFriendly.equalsIgnoreCase("y") || !isFriendly.equalsIgnoreCase("n"))
         {
             valid = false;
