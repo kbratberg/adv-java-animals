@@ -15,10 +15,9 @@ public class InputTypeVerifier {
         valid = true;
     }
 
-    public InputTypeVerifier(String stringAge) {
-        this.stringAge = stringAge;
+    public InputTypeVerifier(String stringAnimal) {
+        this.stringAnimal = stringAnimal;
     }
-
 
 
     public int getAnimal() {
@@ -37,8 +36,12 @@ public class InputTypeVerifier {
         return age;
     }
 
+    public void setStringMiceKilled()
+    {
+        this.stringMiceKilled = stringMiceKilled;
+    }
 
-    public int getMousesKilled() {
+    public int getMousesKilled(String stringMiceKilled) {
         int mousesKilled = Integer.parseInt(stringMiceKilled);
         return mousesKilled;
     }

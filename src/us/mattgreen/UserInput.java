@@ -43,7 +43,8 @@ public class UserInput {
                         name = input.nextLine();
                         System.out.println("How many mice has your cat killed? ");
                         stringMiceKilled = input.nextLine();
-                        mousesKilled = new InputTypeVerifier(stringMiceKilled).getMousesKilled();
+
+                        mousesKilled = new InputTypeVerifier(stringMiceKilled).getMousesKilled(stringMiceKilled);
                         Cat newCat = new Cat(mousesKilled, name);
                         zoo.add(newCat);
                     } else if (animal == 2) {
